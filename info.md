@@ -82,7 +82,7 @@ DROP TABLE menu, person, person_order, person_visits, pizzeria;
 
 ## psql
 
-*Open psql terminal:
+* Open psql terminal:
 ```bash
 sudo -u postgres psql
 ```
