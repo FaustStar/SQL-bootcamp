@@ -37,20 +37,20 @@ CREATE DATABASE sql_bootcamp OWNER yokoevan;
 \q
 ```
 
-* Configure PostgreSQL for Remote Access:
-    * Edit the postgresql.conf File:
+### Configure PostgreSQL for Remote Access:
+* Edit the postgresql.conf File:
 ```bash
 sudo vim /etc/postgresql/<version>/main/postgresql.conf
 ```
-    * Find the line containing listen_addresses and change it to:
+* Find the line containing listen_addresses and change it to:
 ```
 listen_addresses = '*'
 ```
-    * Edit the pg_hba.conf File:
+* Edit the pg_hba.conf File:
 ```bash
 sudo vim /etc/postgresql/<version>/main/pg_hba.conf
 ```
-    * Add the following line at the end of the file to permit connections from any IP address::
+* Add the following line at the end of the file to permit connections from any IP address::
 ```
 host all all 0.0.0.0/0 md5
 ```
